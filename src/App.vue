@@ -1,7 +1,6 @@
 <template>
     <div class="container">
-        <div class="bg"></div>
-        <div class="content">
+        <div class="main-content">
             <div class="summary">
                 <!-- <div>头像</div> -->
                 <Avatar/>
@@ -41,39 +40,23 @@
 
 <style scoped>
 .container {
-    height: 100vh;
+    margin: auto;
+    width: 1280px;
 }
 
-.bg {
-    position: absolute;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    background-image: url('./assets/background.jpg');
-    background-size: cover;
-    backdrop-filter: blur(5px);
-    opacity: 0.5;
-    background-attachment: fixed;
-}
-
-.content {
+.main-content {
     border: dashed skyblue 5px;
-    width: 80%;
-    height: 90%;
-    margin-left: auto;
-    margin-right: auto;
     text-align: center;
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
-    align-items: stretch;
+    align-items: flex-start;
     flex-direction: row;
 }
 
 .summary {
     border: dashed purple 5px;
-    width: 33%;
+    width: 22%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -82,11 +65,11 @@
 
 .info {
     border: dashed purple 5px;
-    width: 63%;
+    width: 75%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .footer {
