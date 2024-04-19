@@ -14,6 +14,11 @@
         display: flex;
         flex-direction: row;
         height: 20px;
+        align-items: flex-start;
+    }
+
+    .content div {
+        margin: 0 10px;
     }
 
 </style>

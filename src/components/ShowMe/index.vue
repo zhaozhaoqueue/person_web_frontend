@@ -28,12 +28,18 @@
     display: flex;
     flex-direction: row;
     justify-content: left;
+    align-self: flex-start;
 
     .item {
-        margin-left: 5px;
+        margin-left: 20px;
+        background-color: grey;
+        padding: 10px;
+        border-radius: 5px;
     }
 }
 .content{
-    height: 200px;
+    height: 500px;
+    width: 100%;
+    margin-top: 50px;
 }
 </style>
